@@ -23,6 +23,7 @@ lazy val root = (project in file("."))
     },
     */
     pomIncludeRepository := { _ => false },
+    publishArtifact in (Compile, packageDoc) := false,
     pomExtra             :=
       <scm>
         <url>git@github.com:dirs-dev/directories-jvm.git</url>
